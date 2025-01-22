@@ -28,12 +28,20 @@ public class UsuarioPessoa {
 	private String email;
 	private String login;
 	private String senha;
+	private String sexo;
 	private int idade;
 	
 	
 	@OneToMany(mappedBy = "usuarioPessoa", fetch = FetchType.EAGER)
 	private List<TelefoneUser> telefoneUsers;
 	
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+	
+	public String getSexo() {
+		return sexo;
+	}
 	
 	public void setTelefoneUsers(List<TelefoneUser> telefoneUsers) {
 		this.telefoneUsers = telefoneUsers;

@@ -2,7 +2,7 @@ package posjavamavenhibernate;
 
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import dao.DaoGeneric;
 import model.TelefoneUser;
